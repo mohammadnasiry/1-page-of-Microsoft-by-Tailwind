@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>microsoft mmad</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='..//dist/output.css'>
+    <script src='main.js'></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="h-full ">
+    <header class="flex flex-row h-14 w-full items-center border-b-2 lg:">
+        <div class="relative flex-none hover:underline " x-data="{ show : false }">
+            <!-- hamberger meno -->
+            <button class="flex lg:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-1" fill="none" x-on:click="show=!show" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
+            </button>
+            <ul x-cloak x-on:click.away="show = false" x-show="show" 
+            class="absolute flex flex-col mt-5 bg-slate-100 border-solid border-2 border-black gap-3 text-lg font-medium ">
+                <li class="border-b-2">
+                    <button  class="ml-2">
+                        <a class="text-2xl" href="https://www.microsoft.com/microsoft-365">
+                            Microsoft-365
+                        </a>
+                    </button>
+                </li>
+                <li class="border-b-2 items-center" >
+                    <button class="ml-2">
+                        <a class="text-2xl " href="https://www.microsoft.com/en-us/windows/">
+                            Windows
+                        </a>
+                    </button>
+                </li>
+                <li class="border-b-2 ">
+                    <button class="ml-2">
+                        <a class="text-2xl" href="https://www.microsoft.com/microsoft-teams/group-chat-software">
+                            Teams
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex lg:flex-row w-full justify-center gap-3 items-center">
+            <!-- icon microsoft -->
+            <div class="items-center justify-center lg:flex-none px-0 gap-4 lg:ml-0">
+                <img alt="koko" itemprop="logo" class="c-image h-7 w-30 sm:ml-10  " src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
+            
+            </div>
+            <!--tabs-->
+            <div class="flex flex-grow max-lg:hidden lg:justify-items-start gap-3 items-center">
+
+                <button class="">
+                <a href="https://www.microsoft.com/en-us/windows" class="hover:underline text-xl"> Windows</a>
+                </button>
+                
+                <div class="relative mt-1 " x-data="{ show : false }">
+                    <button class=" flex">
+                        <a class="inline-flex hover:underline gap-1 items-center text-sm" x-on:click="show=!show">
+                            about windows 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                            class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show}">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul x-cloak x-on:click.away="show = false" x-show="show" 
+                    class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium hover:underline">
+                        <li> one </li>
+                        <li> two </li>            
+                        <li> three </li>            
+                        <li> four </li> 
+                    </ul>
+                </div>
+
+                <div class="relative mt-1 hover:underline" x-data="{ show : false }">
+                    <button class="flex">
+                        <a class="inline-flex gap-1 items-center text-sm" x-on:click="show=!show">
+                            Get windows 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show}">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul x-cloak x-on:click.away="show = false" x-show="show" 
+                    class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium ">
+                        <li> one </li>
+                        <li> two </li>            
+                        <li> three </li>            
+                        <li> four </li> 
+                    </ul>
+                </div>
+                
+                <div class="relative mt-1 hover:underline" x-data="{ show : false }" >
+                    <button class="flex">
+                        <a class="inline-flex gap-1 items-center text-sm" x-on:click="show=!show">
+                            Shop PCs 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                            class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show}">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul x-cloak x-on:click.away="show = false" x-show="show" 
+                    class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium ">
+                        <li> one </li>
+                        <li> two </li>            
+                        <li> three </li>            
+                        <li> four </li> 
+                    </ul>
+                </div>
+
+                <div class="relative mt-1 hover:underline" x-data="{ show : false }">
+                    <button class="flex">
+                        <a class="inline-flex gap-1 items-center text-sm" x-on:click="show=!show">
+                            Get help 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                             class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show}">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul x-cloak x-on:click.away="show = false" x-show="show" 
+                    class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium ">
+                        <li> one </li>
+                        <li> two </li>            
+                        <li> three </li>            
+                        <li> four </li> 
+                    </ul>
+                </div>
+
+                <button class="flex mt-1 hover:underline">
+                    <a class="inline-flex gap-1 items-center text-sm" href="https://www.microsoft.com/en-us/windows/business">
+                        for business
+                    </a>
+                </button>
+
+            </div>
+            
+        </div>
+        <div class="inline-flex justify-end">
+            <!-- serch -->
+            <button class=" hover:animate-bounce lg:" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <!--log in-->
+            <button class="flex  lg: hover:animate-pulse">
+                <a href="https://www.microsoft.com/winrcauth/Signin?ru=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fwindows%2F%3Fr%3D1"></a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-7" >
+                    <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="relative lg:hidden p-2 hover:underline" x-data="{ show : false }">
+        <button class="flex">
+            <a class="inline-flex gap-1 items-center text-sm" x-on:click="show=!show">
+                Windows
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                 class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show}">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+        </button>
+        <ul x-cloak x-on:click.away="show = false" x-show="show" 
+        class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium ">
+            <li> hhi</li>
+            <li> two </li>            
+            <li> three </li>            
+            <button class="flex relative hover:underline" x-data="{ show0 : false }">
+                <a class="inline-flex gap-1 items-center text-sm" x-on:click="show0=!show0">
+                    Get help 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-4 h-4 mt-1" x-bind:class="{'rotate-180' : show0}">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+            </button>
+            <ul x-cloak x-on:click.away="show0 = false" x-show="show0" 
+            class="absolute flex flex-col mt-5 bg-slate-300 w-60 gap-3 text-lg font-medium ">
+                <li> one </li>
+                <li> two </li>            
+                <li> three </li>            
+                <li> four </li> 
+            </ul> 
+        </ul>
+    </div>
+<!--
+-->
+<video class="overflow-hidden p-3 w-fit h-fit mb-10" autoplay src="../Experience the Power of Windows 11 OS, Computers, & Apps.mp4"></video>
+    
+    <div class="w-full h-16 mb-24">
+        <h1 class="text-center font-bold mb-6 text-cyan-500 text-5xl">
+            hello my windows
+        </h1>
+        <h2 class="text-center font-medium  text-red-700 ">
+            When there’s a lot to do, let Windows 11 help you get it done.
+        </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-3  w-full gap-5 p-10 ">
+        <div class="flex flex-col">
+            <img class="mb-10" src="../data/photo/RW10seS.png" alt="get help">
+            <h1 class="mb-5 text-3xl lg:text-3xl font-mono ">get help!</h1>
+            <p class="mb-5 ">
+                Need help transferring files, resetting a password, or upgrading to Windows 11? Explore the Windows
+                support page for helpful articles on all things Windows. Have a specific issue you’re troubleshooting? 
+                Ask your question in the Microsoft Community.
+            </p>
+            <a href="https://support.microsoft.com/windows" class="inline-flex mb-5 items-center text-cyan-500 font-bold">
+                Get Windows support 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+            <br>
+            <a href="https://answers.microsoft.com/" class="inline-flex mb-5 items-center text-cyan-500 font-bold">
+                Ask the community 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+        <div class="flex flex-col ">
+            <img class="mb-10" src="../data/photo/RW10Czf.png" alt="get help">
+            <h1 class="mb-5 text-3xl font-mono">Upgrade your experience</h1>
+            <p class="mb-5">Learn how to get Windows 11 on your current PC4,
+                or purchase a new PC that can run Windows 11.</p>
+            <a href="https://www.microsoft.com/en-us/windows/get-windows-11" class="inline-flex items-center text-cyan-500 font-bold">
+                Get Windows 11 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+        <div class="flex flex-col ">
+            <img class="mb-10" src="../data/photo/RW10A7h.png" alt="get help">
+            <h1 class="mb-5 text-3xl font-mono">Meet Windows 11</h1>
+            <p class="mb-5">Learn how to use the new features of Windows 11 and see what makes it the best Windows yet</p>
+            <a href="https://www.microsoft.com/en-us/windows/windows-11" class="inline-flex items-center text-cyan-500 font-bold"> See what’s new 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>                  
+            </a>
+        </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 p-10  gap-20">
+        <div class="flex flex-col">
+            <img src="..//data/photo/RW13kMu.jpg" class="rounded-lg" alt="hahahaha">
+        </div>
+        <div class="class">
+            <p class="font-bold mb-10 text-sky-700 justify-center text-4xl">___________</p>
+            <p class="text-3xl lg:text-6xl  mb-10">Sync your PC & phone</p>
+            <p class="mb-5 text-xl lg:text-2xl">Microsoft Phone Link makes it possible to make calls, reply to texts, and check your phone’s notifications from your PC5.</p>
+            <button class="bg-gradient-to-r from-sky-500 to-stone-800 rounded-xl px-4 py-2 text-white text-center hover:brightness-200">
+                <a href="https://www.microsoft.com/en-us/windows/sync-across-your-devices" class="hover:underline">Explore phone link</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="grid lg:flex lg:flex-row-reverse lg: p-10  gap-10">
+        <div class="flex-1 flex-col">
+            <img src="..//data/photo/bing.jpg" class="rounded-lg w-full" alt="hahahaha">
+        </div>
+        <div class="flex-1">
+            <p class="font-bold mb-10 text-sky-700 justify-center text-4xl">___________</p>
+            <p class="text-3xl lg:text-6xl  mb-10">Chat with AI-powered Bing</p>
+            <p class="mb-5 text-xl lg:text-2xl"> Powered by the latest AI, the new Bing brings together search, browsing, and chat to help you make the most of the web. Start from your Windows taskbar to find relevant, comprehensive results. Begin an interactive chat to ask follow-up questions to refine your search. And get inspired with suggestions to kickstart whatever you want to create. Exploring online has never been easier.</p>
+            <button class=" bg-gradient-to-r from-sky-500 to-stone-800 rounded-xl px-4 py-2 text-white text-center hover:brightness-200">
+                <a href="https://www.bing.com/chat?form=MY02AT&OCID=MY02AT" class="hover:underline">Try it now</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center w-full h-16 p-14 mb-14">
+        <div class="class">
+            <h1 class="text-center font-bold mb-6 text-5xl">
+                Find the right fit
+            </h1>
+        </div>
+        <div class="class">
+            <h2 class="text-center font-medium ">
+                Explore a selection of new PCs, or get help selecting the best computer for your unique needs.
+            </h2>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center md:grid lg:grid-rows-4 p-6
+    lg:grid-cols-4 grid-flow-row w-full gap-x-4 gap-y-2 h-auto mb-10">
+        <div class=" flex-1 lg:row-span-4 lg:col-span-2 overflow-x-hidden">
+            <a href="https://www.microsoft.com/en-us/windows/windows-laptops" class="hover:animate-ping">
+                <img class="" src="../data/photo/shop laptops.png" alt="shop laptops" >
+            </a>
+        </div>
+        <div class=" flex-1  lg:col-span-1 lg:row-span-2">
+            <a href="https://www.microsoft.com/en-us/windows/2-in-1s" class="hover:animate-ping">
+                <img class=" w-full" src="../data/photo/shop 2 in 1s.png" alt="2 in 1s">
+            </a>
+        </div>
+        <div class=" flex-1 lg:row-span-2  lg:col-span-1">
+            <a href="https://www.microsoft.com/en-us/windows/help-me-choose" class="hover:animate-ping">
+                <img class=" w-full" src="../data/photo/help me choose.png" alt="help">
+            </a>
+        </div>
+        <div class="relative flex-1 lg:row-span-2 lg:col-span-2 gap-2">
+            <a href="https://www.microsoft.com/en-us/windows/gaming-pcs" class="hover:animate-ping">
+                <img class="" src="../data/photo/shop gaming pcs.png" alt="shop gaming">
+            </a>
+        </div>
+    </div>
+
+    <!--1 to end-->
+    <div class="w-full bg-gradient-to-b from-green-200 to-slate-50">
+        <div class=" grid lg:flex lg:flex-row-reverse items-center lg: ">
+            <picture class="w-full hover:animate-pulse lg:w-4/6">
+                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE55U7Q" media="(min-width: 1400px)">
+                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE55U7Z" media="(min-width: 1084px)">
+                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE56CIX" media="(min-width:540px)">
+                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE56A9r" media="(min-width:0)">
+                <img srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE55U7Q" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE55U7Q" alt="Floating Microsoft 365 apps logos">
+            </picture>
+            <div class=" lg:w-2/6 p-10">
+                <p class="font-bold mb-10 text-sky-700 justify-center text-4xl">___________</p>
+                <p class="text-3xl lg:text-5xl  mb-10">Better together</p>
+                <p class="mb-5 text-lg lg:text-xl"> Discover the Windows 11 experience built to bring yuor favorite Microsoft tools to life .</p>
+                
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3  w-full gap-5 p-10 ">
+            <div class="flex flex-col">
+                <img class="mb-10" src="../data/photo/microsoft 365.png" alt="get help">
+                <h1 class="mb-5 text-3xl lg:text-3xl">Microsoft 365</h1>
+                <p class="mb-5 ">Maximize your productivity with easy-to-use Windows 11 multitasking tools built to work with the Microsoft apps you use every day.</p>
+                <a href="https://www.microsoft.com/microsoft-365" class="inline-flex mb-5 items-center text-cyan-500 font-bold">
+                    Explore Microsoft 365 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
+            <div class="flex flex-col lg:mt-20">
+                <img class="mb-10" src="../data/photo/microsoft edge.png" alt="get help">
+                <h1 class="mb-5 text-3xl ">Microsoft Edge</h1>
+                <p class="mb-5">Make the most of your time online with the browser built for Windows.</p>
+                <a href="https://www.microsoft.com/edge?form=MA13I5" class="inline-flex items-center text-cyan-500 font-bold">
+                    Get Microsoft Edge  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
+            <div class="flex flex-col ">
+                <img class="mb-10" src="../data/photo/microsoft store.png" alt="get help">
+                <h1 class="mb-5 text-3xl ">Microsoft store</h1>
+                <p class="mb-5">The apps you need. The shows you love. Find them fast in the new Microsoft Store.</p>
+                <a href="https://www.microsoft.com/en-us/windows/windows-11-apps" class="inline-flex items-center text-cyan-500 font-bold"> Explore Windows apps 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>                  
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:flex w-full p-10 lg:flex-row lg: items-center">
+            <div class="mb-10">
+                <h1 class="mb-5 text-4xl">Looking for more?</h1>
+                <p class="mb-4">Get help with your transition to Windows 11, and make the most of your Windows experience.</p>
+                <img class="max-lg:hidden h-full w-full" src="//data/photo/microsoft 365.png" alt="end" >
+            </div>
+            <div class="divide-y-2 divide-blue-200 p-3">
+                <h1 class="mb-2 text-3xl ">Get Windows 11</h1>
+                <p class="mb-5">Intuitive. Easy. Faster than ever. Experience all Windows has to offer.</p>
+                <a class="inline-flex items-center hover:underline mb-5 font-bold text-blue-500" href="https://microsoft.com/en-us/windows/get-windows-11" >
+                    Get the best Windows yet
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg> 
+                </a>
+
+                <h1 class="mb-2 text-3xl ">Get Microsoft news and updates</h1>
+                <p class="mb-5">Subscribe to our newsletter to get the latest news, feature updates, how-to tips, deals and more for Windows and other Microsoft products.</p>
+                <a class="inline-flex items-center mb-5 hover:underline font-bold text-blue-500" href="https://account.microsoft.com/profile/subscribe?TID=30799600-90d3-4c16-9362-48529640ab2c&SRU=1SWDNWVSTY&CRU=2SWDNWVS" >
+                    Subscribe now 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg> 
+                </a>
+                <h1 class="mb-2 text-3xl ">Become an insider</h1>
+                <p class="mb-5">Register with the Windows Insider Program and start engaging with engineers to help shape the future of Windows.</p>
+                <a class="inline-flex items-center hover:underline font-bold text-blue-500  mb-10" href="https://insider.windows.com/en-us/" >
+                    Learn more 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg> 
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col p-6 gap-3 text-xs text-white h- w-full  bg-slate-800">
+        <p class="">
+            <span class="text-blue-500">1</span> Screens simulated. Features and app availability may vary by region.
+        </p>
+        <p class="">
+            <span class="text-blue-500">2</span> Some apps shown coming later. Certain apps only available through Microsoft Store app in Windows 11.
+        </p>
+        <p class="">
+            <span class="text-blue-500">3</span> Microsoft 365 subscription sold separately.
+        </p>
+        <p class="">
+            <span class="text-blue-500">4</span> Windows 11 upgrade is available for eligible PCs that meet <a class="text-blue-500 underline" href="https://www.microsoft.com/en-us/windows/windows-11-specifications#table1"> minimum device specifications.</a> Upgrade timing may vary by device. Internet service fees may apply. Features and app availability may vary by region. Certain features require specific hardware 
+            (see <a class="text-blue-500 underline" href="https://www.microsoft.com/en-us/windows/windows-11-specifications">Windows 11 specifications</a>).
+        </p>
+        <p class="">
+            <span class="text-blue-500">5</span> Phone Link experience comes preinstalled on your PC with Windows 10 (running Windows 10, May 2019 Update at the least) or Windows 11. To experience the full functionality, Android phones must be running Android 7.0 or later. Phone Link for iOS requires iPhone with iOS 14 or higher, Windows 11 device, Bluetooth connection and the latest version of the Phone Link app. Not available for iPad (iPadOS) or MacOS. Device compatibility may vary. Regional restrictions may apply.
+        </p>
+    </div>
+    <div class="lg:flex p-4 justify-between gap-4 items-center bg-white">
+        <div class="inline-flex items-center gap-4">
+            <p class="class">Follow Microsoft Windows</p>
+            <a href="http://www.facebook.com/windows" class="">
+                <img class="h-8 w-8" src="../data/photo/facebook-square-blue-logo-15981.svg" alt="">
+            </a>
+            <a href="http://www.twitter.com/windows" class="">
+                <img class="h-8 w-8" src="../data/photo/twitter-square-blue-logo-15977.svg" alt="">
+            </a>
+        </div>
+        <div class="inline-flex items-center gap-4">
+            <p class="class">Share this page</p>
+            <a href="https://www.facebook.com/sharer/sharer.php?m2w&s=100&u=https://www.microsoft.com/en-us/windowss" class="">
+                <img class="h-8 w-8" src="../data/photo/facebook-square-blue-logo-15981.svg" alt="">
+            </a>
+            <a href="http://twitter.com/share?url=https://www.microsoft.com/en-us/windows" class="">
+                <img class="h-8 w-8" src="../data/photo/twitter-square-blue-logo-15977.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
